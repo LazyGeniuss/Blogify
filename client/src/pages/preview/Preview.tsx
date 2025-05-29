@@ -1,4 +1,4 @@
-import "./preview.css";
+import "./Preview.css";
 import { useLocation, useNavigate } from "react-router";
 import NavLayout from "../../layout/NavLayout";
 import AuthGuard from "../../layout/AuthGuard";
