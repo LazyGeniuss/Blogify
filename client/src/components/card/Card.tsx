@@ -1,9 +1,8 @@
-import "./Card.css";
 import moment from "moment";
+import { CSSProperties } from "react";
 import { Images } from "../../assets";
 import { BASE_URL } from "../../utils/constants";
-import { instance } from "../../services/instance";
-import { CSSProperties, useEffect, useState } from "react";
+import "./Card.css";
 
 interface ICard {
 	id: string;
@@ -18,16 +17,16 @@ interface ICard {
 }
 
 export const Card1 = ({ title, onClick, content, date, id }: ICard) => {
-	const [image, setImage] = useState();
-	const getImage = async () => {
-		const res = await instance.get(`${BASE_URL}blog/image/${id}`);
-		setImage(res.data);
-		return res;
-	};
+	// const [image, setImage] = useState();
+	// const getImage = async () => {
+	// 	const res = await instance.get(`${BASE_URL}blog/image/${id}`);
+	// 	setImage(res.data);
+	// 	return res;
+	// };
 
-	useEffect(() => {
-		getImage();
-	}, [id]);
+	// useEffect(() => {
+	// 	getImage();
+	// }, [id]);
 
 	return (
 		<div className="card1-container" onClick={onClick}>
@@ -43,10 +42,10 @@ export const Card1 = ({ title, onClick, content, date, id }: ICard) => {
 };
 
 export const Card2 = ({ onClick, date, title, id }: ICard) => {
-	const getImage = async () => {
-		const res = await instance.get(`${BASE_URL}blog/image/${id}`);
-		return res;
-	};
+	// const getImage = async () => {
+	// 	const res = await instance.get(`${BASE_URL}blog/image/${id}`);
+	// 	return res;
+	// };
 	return (
 		<div className="card2-container" onClick={onClick}>
 			<img src={`${BASE_URL}blog/image/${id}`} className="card2-image" />
@@ -69,10 +68,10 @@ export const Card3 = ({
 	onEditClick,
 	style,
 }: ICard) => {
-	const getImage = async () => {
-		const res = await instance.get(`${BASE_URL}blog/image/${id}`);
-		return res;
-	};
+	// const getImage = async () => {
+	// 	const res = await instance.get(`${BASE_URL}blog/image/${id}`);
+	// 	return res;
+	// };
 	return (
 		<div className="card3-container" onClick={onClick} style={style}>
 			<img src={`${BASE_URL}blog/image/${id}`} className="card3-img" />
