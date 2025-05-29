@@ -1,0 +1,19 @@
+.explore-container {
+	background-color: #2c2638;
+	border-radius: 10px;
+	padding: 10px 100px 50px 100px;
+	align-items: center;
+	min-height: 50vh;
+	min-width: 75vw;
+}
+
+.explore-grid-view {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.explore-title {
+	margin: 40px 0;
+	font-size: 40px;
+}

@@ -1,0 +1,26 @@
+.profile-container {
+	background-color: #2c2638;
+	border-radius: 10px;
+	padding: 50px;
+	align-items: center;
+	min-width: 81vw;
+	min-height: 50vh;
+}
+
+.profile-user-detail {
+	font-size: 40px;
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+.profile-title {
+	font-size: 30px;
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+.profile-grid-view {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}

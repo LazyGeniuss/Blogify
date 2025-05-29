@@ -1,0 +1,21 @@
+.home-title {
+	text-align: center;
+	font-size: 60px;
+	font-weight: "500";
+}
+
+.home-container {
+	background-color: #2c2638;
+	border-radius: 10px;
+	padding: 10px 100px;
+	overflow: hidden;
+}
+
+.home-content-container {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	justify-content: center;
+	min-height: 50vh;
+	min-width: 75vw;
+}

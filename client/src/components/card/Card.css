@@ -1,0 +1,75 @@
+.card1-container {
+	width: 600px;
+	margin: 30px 0 80px 0;
+}
+
+.card1-image {
+	height: 400px;
+	width: 600px;
+	border-radius: 10px;
+}
+
+.card1-title {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.card1-content {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.card2-container {
+	display: flex;
+	margin: 40px 0;
+	width: 600px;
+}
+
+.card2-image {
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.card2-content-container {
+	margin: 0 0 0 20px;
+}
+
+.card2-content {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.card3-container {
+	width: 300px;
+}
+
+.card3-img {
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.card3-title {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.card3-content {
+	font-size: 14px;
+	text-align: justify;
+	font-weight: 400;
+}
+
+.card3-flex {
+	display: flex;
+}
+
+.card3-icon {
+	height: 20px;
+	width: 20 px;
+}
+
+.card3-margin-left {
+	margin: 0 0 0 20px;
+}

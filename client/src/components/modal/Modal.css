@@ -1,0 +1,35 @@
+.modal-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: #00000099;
+}
+
+.modal {
+	justify-content: center;
+	align-items: center;
+	background-color: #2c2638;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.modal-title {
+	font-size: 25px;
+}
+
+.modal-button-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0;
+}
+
+.modal-button {
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
