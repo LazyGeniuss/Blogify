@@ -7,7 +7,10 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://blogify-frontend-0o5m.onrender.com',
+  // credentials: true // if you're using cookies or auth headers
+}));
 app.use(express.json())
 
 app.use("/user", userRoute)
