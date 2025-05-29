@@ -7,7 +7,7 @@ export const colors = {
 
 }
 
-export const BASE_URL = "http://localhost:3000/";
+export const BASE_URL = "https://blogify-vf54.onrender.com/";
 
 // const NGROk_URL = "https://386f-122-179-140-29.ngrok-free.app/";
 // export const BASE_URL = NGROk_URL;
