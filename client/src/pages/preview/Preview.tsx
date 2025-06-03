@@ -48,7 +48,7 @@ const Preview = () => {
 		form.append("title", title);
 		form.append("content", content);
 		form.append("image", image);
-		form.append("category", category);
+		form.append("category", category.length > 0 ? category : ["Others"]);
 
 		try {
 			let res: any;
@@ -82,7 +82,7 @@ const Preview = () => {
 								</div>
 								<p className="preview-content">{`${state?.content}`}</p>
 
-								<div>{`Category : ${state?.category?.at(0) ?? "Unkown"}`}</div>
+								<div>{`Category : ${state?.category?.at(0) ?? "Unknown"}`}</div>
 
 								<div style={{ margin: "50px 0" }}>
 									<i style={{ lineHeight: 1 }}>{`Written by - ${
