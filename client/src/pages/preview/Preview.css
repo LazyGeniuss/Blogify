@@ -4,7 +4,7 @@
 	border-radius: 10px;
 	padding: 40px 200px;
 	overflow: hidden;
-	max-width: "50%";
+	min-width: 87vw;
 	align-items: center;
 	justify-content: center;
 }

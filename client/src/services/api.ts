@@ -1,3 +1,4 @@
+import axios from "axios";
 import { instance } from "./instance";
 
 interface Ilogin {
@@ -77,6 +78,22 @@ export const deleteBlog = async ({ id }: { id: string }) => {
 
 export const editBlog = async ({ id, data }: { id: string; data: any }) => {
   const res = await instance.post(`blog/edit/${id}`, data);
+  return res;
+}
+
+export const geminiApi = async ({ text }: { text: string }) => {
+  const res = await axios.post(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`, {
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": text + `    \n.consider the above text as blog content what would be the category of this blog. give response in one word"`
+          }
+        ]
+      }
+    ]
+
+  });
   return res;
 }
 

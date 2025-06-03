@@ -60,7 +60,7 @@ const Profile = () => {
 						<>
 							<div className="profile-title">{"Your Blogs"}</div>
 							<div className="profile-grid-view">
-								{blogs &&
+								{blogs && blogs?.length > 0 ? (
 									blogs.map((item) => {
 										return (
 											<Card3
@@ -89,11 +89,14 @@ const Profile = () => {
 												}}
 											/>
 										);
-									})}
+									})
+								) : (
+									<div>{"You haven't created any blog yet."}</div>
+								)}
 							</div>
 							<div className="profile-title">{"Blogs Liked by You"}</div>
 							<div className="profile-grid-view">
-								{likedBlogs &&
+								{likedBlogs && likedBlogs?.length > 0 ? (
 									likedBlogs.map((item) => {
 										return (
 											<Card3
@@ -106,7 +109,10 @@ const Profile = () => {
 												onClick={() => navigate(`/blog/${item?._id}`)}
 											/>
 										);
-									})}
+									})
+								) : (
+									<div>{"No Blogs Found"}</div>
+								)}
 							</div>
 						</>
 					) : (

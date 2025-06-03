@@ -99,10 +99,10 @@ const Blog = () => {
 								/>
 								<i>{`${likes} ${likes > 1 ? "likes" : "like"}`}</i>
 							</div>
-
-							<i style={{ lineHeight: 10 }}>{`Written by - ${
-								blogData?.email?.split("@")[0]
-							}`}</i>
+							<div>{`Category : ${blogData?.category[0]}`}</div>
+							<div style={{ margin: "50px 0" }}>
+								<i>{`Written by - ${blogData?.email?.split("@")[0]}`}</i>
+							</div>
 						</div>
 					</div>
 				) : (

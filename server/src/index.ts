@@ -9,6 +9,7 @@ const app = express();
 
 app.use(cors({
   origin: 'https://blogify-frontend-0o5m.onrender.com',
+  // origin: 'http://localhost:5173',
   // credentials: true // if you're using cookies or auth headers
 }));
 app.use(express.json())

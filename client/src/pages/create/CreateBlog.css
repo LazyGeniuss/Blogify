@@ -1,23 +1,30 @@
 .create-blog-title {
-	font-size: 20px;
+	font-size: 22px;
 	appearance: none;
 	outline: none;
-	background-color: #3c364d;
+	border: none;
+	background-color: #4a415f;
 	justify-self: baseline;
 	padding: 20px 30px;
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 15px;
 	box-sizing: border-box;
+	color: #fff;
+	font-family: Inter;
 }
 
 .create-blog-content {
-	background-color: #3c364d;
-	min-height: 60vh;
+	background-color: #4a415f;
+	font-family: Inter;
+	min-height: 70vh;
 	padding: 40px 30px;
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 15px;
 	box-sizing: border-box;
+	color: #fff;
+	font-size: 20px;
+	line-height: 2.5;
 }
 
 .create-blog-button {
@@ -34,5 +41,5 @@
 
 .create-blog-button-container {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
