@@ -57,8 +57,6 @@ const CreateBlog = () => {
 			if (res?.data?.candidates[0].content.parts[0].text) {
 				category.push(res?.data?.candidates[0].content.parts[0].text);
 			}
-			// console.log("res", res?.data?.candidates[0].content.parts[0].text);
-
 			setLoading(false);
 		} catch (e) {
 			setLoading(false);
@@ -157,6 +155,7 @@ const CreateBlog = () => {
 						<div
 							style={{
 								display: "flex",
+								flexDirection: "column",
 								justifyContent: "center",
 								alignItems: "center",
 								minWidth: "70vw",
@@ -166,6 +165,9 @@ const CreateBlog = () => {
 							}}
 						>
 							<ThreeCircles color={"#6e54b5"} />
+							<div style={{ fontSize: 30, margin: "30px 0" }}>
+								{"Categorizing your content using gemini AI"}
+							</div>
 						</div>
 					)}
 				</div>
